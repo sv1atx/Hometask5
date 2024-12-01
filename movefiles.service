@@ -1,0 +1,12 @@
+[Unit]
+Description=Переміщення файлів з Folder1 до Folder2
+After=network.target
+
+[Service]
+ExecStart=/path/to/move-script.sh
+Restart=always
+User=ubuntu
+Group=ubuntu
+
+[Install]
+WantedBy=multi-user.target
